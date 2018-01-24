@@ -13,18 +13,20 @@ namespace RefactorKata
             {
                 var cmd = conn.CreateCommand();
                 cmd.CommandText = "select * from Products";
+
                 var reader = cmd.ExecuteReader();
                 var products = new List<Product>();
 
                 //TODO: Replace with Dapper once Dapper is tought
                 while (reader.Read())
                 {
-                    products.Add(new Product {Name = reader["Name"].ToString()});
+                    products.Add(new Product { Name = reader["Name"].ToString()});
                 }
+                
                 foreach (var product in products)
                 {
                     Console.WriteLine(product.Name);
-                }
+                }   
             }
         }
     }
