@@ -6,7 +6,7 @@ namespace RefactorKata
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             // TODO: Add connection string to config once config is taught
 

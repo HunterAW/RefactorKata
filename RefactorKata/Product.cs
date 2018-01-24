@@ -1,5 +1,4 @@
-﻿
-namespace RefactorKata
+﻿namespace RefactorKata
 {
     public class Product
     {
